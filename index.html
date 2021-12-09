@@ -3,13 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet" type="text.css">
-        <script src="js/pythagorasClassesScript.js">
-        
-        </script>
-        
+        <link href="css/style.css" rel="stylesheet"  >
+        <script src="js/Dreieck.js"></script>
+        <script src="js/pythagorasClassesScript.js"></script>
     </head>
-    <body class="body">
+    <body onload="mainLoaded()">
         
         <h3>Julians Pythagoras mit Klassen</h3>
         <img src="rechtwinkliges-dreieck.jpg">
@@ -22,9 +20,8 @@
         </form><br>
             <button onclick="Berechnen()" id="btnBerechne">Berechne</button><br><br>
             <button onclick="alleInputsResetten()" id="btnLöschen">löschen</button><br><br>
-              
+            <ol id="liste">
+              </ol>
            
-           
-        
     </body>
 </html>
