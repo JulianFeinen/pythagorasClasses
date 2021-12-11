@@ -1,4 +1,4 @@
-class Dreieck {
+/*class Dreieck {
     constructor(aLaenge, bLaenge, cLaenge, doppelF) {
         this.aLaenge = aLaenge;
         this.bLaenge = bLaenge;
@@ -21,4 +21,4 @@ class Dreieck {
         return this.aLaenge = Math.sqrt((this.cLaenge * this.cLaenge) - (this.cLaenge * this.bLaenge));
     }
 
-}
+}*/

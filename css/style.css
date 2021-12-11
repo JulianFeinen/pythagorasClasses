@@ -1,3 +1,36 @@
 body{
     background-color: rgb(240, 215, 146);
 }
+img.imageClass{
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    border:2px solid rgb(189, 91, 53);
+    border-radius: 5px ;
+}
+h3{
+    color: rgb(138, 41, 62);
+    text-align: center;
+    font-size: 30px;
+}
+label{
+    font-size: 20px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 5px ;
+    background-color: rgb(255, 255, 255);
+    margin:10px;
+    
+}
+input{
+    font-size: 20px;
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 5px ;
+}
+img.imageClass:hover{
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation{
+    100%{transform: rotate(360deg);}
+}

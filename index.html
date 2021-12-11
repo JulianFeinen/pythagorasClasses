@@ -4,21 +4,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet"  >
-        <script src="js/Dreieck.js"></script>
-        <script src="js/pythagorasClassesScript.js"></script>
+        <!-- <script src="js/Dreieck.js"></script> -->
+      
+        <script>
+        class Dreieck {
+            constructor(aLaenge, bLaenge, cLaenge, doppelF) {
+                this.aLaenge = aLaenge;
+                this.bLaenge = bLaenge;
+                this.cLaenge = cLaenge;
+            }
+        
+            fKathetenBerechnen() {
+                return this.cLaenge = Math.sqrt((this.aLaenge * this.aLaenge) + (this.bLaenge * this.bLaenge));
+            }
+        
+            FlaechenRechnung() {
+                return this.doppelF = (this.aLaenge * this.bLaenge) / 2;
+            }
+        
+            fHypotenuseUndABerechnen() {
+                return this.bLaenge = Math.sqrt((this.cLaenge * this.cLaenge) - (this.aLaenge * this.aLaenge));
+            }
+        
+            fHypotenuseUndBBerechnen() {
+                return this.aLaenge = Math.sqrt((this.cLaenge * this.cLaenge) - (this.cLaenge * this.bLaenge));
+            }
+        
+        }</script>
+          <script src="js/pythagorasClassesScript.js"></script>
+
     </head>
-    <body onload="mainLoaded()">
+    <body onload="mainLoaded();return false">
         
         <h3>Julians Pythagoras mit Klassen</h3>
-        <img src="rechtwinkliges-dreieck.jpg">
-        <h2 style="display: none;">test</h2>
-        <form name="forminput" action="">
+        <img onmouseover="" class="imageClass" id="imageID" src="rechtwinkliges-dreieck.jpg">
+        <form name="forminput" action="return false">
             <label>(Kathetenlänge)a :</label><input type="text" id="inputA" name="inputAtext" ><br><br>
             <label>(Kathetenlänge)b:</label><input type="text" id="inputB" name="inputBtext"><br><br>
             <label>(Hypotenusenlänge)c:</label><input type="text" id="inputC" name="inputCtext"><br><br><br>
         <label id="labelF">(Fläche)F:</label>
         </form><br>
-            <button onclick="Berechnen()" id="btnBerechne">Berechne</button><br><br>
+            <button onclick="Berechnen();return false" id="btnBerechne">Berechne</button><br><br>
             <button onclick="alleInputsResetten()" id="btnLöschen">löschen</button><br><br>
             <ol id="liste">
               </ol>
