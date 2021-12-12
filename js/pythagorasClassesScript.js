@@ -35,7 +35,6 @@ function setCookie(cName,cValue,exdays)
 }
 function getCookie(cName)//mein Ansatz aLaenge=129.33676971379793; bLaenge=13; cLaenge=136
 {
-    //alert("gc"+document.cookie);
     let cN = cName;
     let allCookies = document.cookie.split(";");
     for(let i = 0; i<allCookies.length;i++)
@@ -49,13 +48,12 @@ function getCookie(cName)//mein Ansatz aLaenge=129.33676971379793; bLaenge=13; c
 }
 function mainLoaded()
 {
-    //alert(document.cookie);
-    // if((typeof dreieckobj.aLaenge !=="undefined") && (typeof dreieckobj.bLaenge !=="undefined") && (typeof dreieckobj.cLaenge !=="undefined"))
-    // {   
+     if((typeof dreieckobj.aLaenge !=="undefined") && (typeof dreieckobj.bLaenge !=="undefined") && (typeof dreieckobj.cLaenge !=="undefined"))
+     {   
         document.getElementById("inputA").value = getCookie("aLaenge");
         document.getElementById("inputB").value = getCookie("bLaenge");
         document.getElementById("inputC").value = getCookie("cLaenge");
-    // }
+     }
 }
 
 function Berechnen()
@@ -65,7 +63,7 @@ function Berechnen()
          dreieckobj = new Dreieck(document.getElementById("inputA").value, document.getElementById("inputB").value, document.getElementById("inputC").value);
        
         document.getElementById("inputC").value = dreieckobj.fKathetenBerechnen();
-        document.getElementById("labelF").innerHTML = "(Fläche)F:" + (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
      
         fresultList(); 
     }
@@ -76,7 +74,7 @@ function Berechnen()
         if (parseFloat(dreieckobj.cLaenge) > parseFloat(dreieckobj.aLaenge))
         {
         document.getElementById("inputB").value = dreieckobj.fHypotenuseUndABerechnen();
-        document.getElementById("labelF").innerHTML = "(Fläche)F:" + (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
  
         fresultList();
         }
@@ -95,7 +93,7 @@ function Berechnen()
         if(parseFloat(dreieckobj.cLaenge)>parseFloat(dreieckobj.bLaenge))
         {
         document.getElementById("inputA").value = dreieckobj.fHypotenuseUndBBerechnen();
-        document.getElementById("labelF").innerHTML = "(Fläche)F:" + (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
  
         fresultList();
         }
@@ -146,5 +144,5 @@ function alleInputsResetten()
     document.getElementById("inputA").value = "";
     document.getElementById("inputB").value = "";
     document.getElementById("inputC").value = "";
-    document.getElementById("labelF").innerHTML = "(Fläche)F:";
+    document.getElementById("labelF").innerHTML = "";
 }

@@ -32,22 +32,28 @@
         
         }</script>
           <script src="js/pythagorasClassesScript.js"></script>
-
-    </head>
-    <body onload="mainLoaded();return false">
         
-        <h3>Julians Pythagoras mit Klassen</h3>
+    </head>
+    <body onload="mainLoaded()">
+        <section class="bodySection">
+           <div class="div1">
+            <form class="forminput">
+            <label class="labelA" >a</label><input class="inputAclass" type="text" id="inputA"><br><br>
+            <label class="labelB">b</label><input class="inputBclass" type="text" id="inputB"><br><br>
+            <label class="labelC">c</label><input class="inputCclass" type="text" id="inputC"><br><br>
+            <label class="labelFclass">F</label><label class="labelF" id="labelF"></label>
+        </form>
+        <h3>Julians Pythagoras</h3>
         <img onmouseover="" class="imageClass" id="imageID" src="rechtwinkliges-dreieck.jpg">
-        <form name="forminput" action="return false">
-            <label>(Kathetenlänge)a :</label><input type="text" id="inputA" name="inputAtext" ><br><br>
-            <label>(Kathetenlänge)b:</label><input type="text" id="inputB" name="inputBtext"><br><br>
-            <label>(Hypotenusenlänge)c:</label><input type="text" id="inputC" name="inputCtext"><br><br><br>
-        <label id="labelF">(Fläche)F:</label>
-        </form><br>
-            <button onclick="Berechnen();return false" id="btnBerechne">Berechne</button><br><br>
-            <button onclick="alleInputsResetten()" id="btnLöschen">löschen</button><br><br>
-            <ol id="liste">
-              </ol>
-           
+        <ol class="listeClass" id="liste">
+        </ol>
+        </div>
+        
+        <div class="div2">
+            <button class="btnBerechnen" onclick="Berechnen()" id="btnBerechne">Berechnen</button>
+            <button class="btnReset" onclick="alleInputsResetten()" id="btnLöschen">löschen</button>
+        </div> 
+        </section>
+        
     </body>
 </html>

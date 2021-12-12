@@ -1,5 +1,17 @@
-body{
-    background-color: rgb(240, 215, 146);
+ html,body{
+    height: 100%;
+}
+
+@font-face {
+    src: url(myfonts/futura/futur.ttf);
+    font-family: 'futura';
+    font-style: normal;
+    font-weight: 100;
+}
+* { /*das sternchen muss man immer machen damit die ganze seite ausgefüllt wird.*/
+    margin:0px;
+    padding: 0px;
+    align-content: center;
 }
 img.imageClass{
     display: block;
@@ -7,30 +19,128 @@ img.imageClass{
     margin-left: auto;
     margin-right: auto;
     width: 15%;
-    border:2px solid rgb(189, 91, 53);
-    border-radius: 5px ;
+    border:10px solid rgb(199, 19, 73);
+    border-radius: 30px ;
 }
 h3{
-    color: rgb(138, 41, 62);
-    text-align: center;
-    font-size: 30px;
+    color: rgb(245, 9, 80);
+    text-align:center;
+    font-size: 50px;
+    font-family: futura;
+    margin-top: -30%;
 }
-label{
-    font-size: 20px;
-    border:2px solid rgb(255, 255, 255);
-    border-radius: 5px ;
-    background-color: rgb(255, 255, 255);
-    margin:10px;
-    
+form.forminput{
+    margin-top: 100px;
 }
+
+
 input{
-    font-size: 20px;
-    border:2px solid rgb(255, 255, 255);
-    border-radius: 5px ;
+    font-size: 40px;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 20px ;
+    height: 40px;
 }
+input.inputAclass{
+    margin-left: 20px;
+}
+input.inputBclass{
+    margin-left: 10px;
+}
+input.inputCclass{
+    margin-left: 10px;
+}
+label.labelF{
+    background-color: rgb(255, 255, 255);
+    border:2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 200px;
+    padding-right: 200px;
+}
+
+
+
+
+label{
+    font-size: 30px;
+    font-family: futura;
+}
+label.labelA{
+    margin-left: 90px;
+    font-size: 80px;
+}
+label.labelB{
+    margin-left: 90px;
+    font-size: 80px;
+}
+label.labelC{
+    margin-left: 90px;
+    font-size: 80px;
+}
+label.labelFclass{
+    margin-left: 90px;
+    font-size: 80px;
+}
+
+
+
+
 img.imageClass:hover{
     animation: rotation 1s linear infinite;
 }
 @keyframes rotation{
     100%{transform: rotate(360deg);}
+}
+button.btnBerechnen{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border-color:rgb(199, 19, 73);
+    background: rgb(199, 19, 73);
+    font-size: 30px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+button.btnReset{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border-color:rgb(199, 19, 73);
+    background: rgb(199, 19, 73);
+    font-size: 30px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+button.btnBerechnen:hover{
+    background-color: rgb(250, 146, 224);
+    border-color:rgb(250, 146, 224);
+}
+button.btnReset:hover{
+    background-color: rgb(250, 146, 224);
+    border-color:rgb(250, 146, 224);
+}
+div.div1{
+    width: 100%;
+    height:70%;
+    background-color: rgb(67, 21, 153);
+    padding-top: 20px;
+}
+.listeClass{
+    font-size: 30px;
+    margin-left: 70%;
+    margin-top: -20%;
+}
+div.div2{
+    height: 50px;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* background: rgb(14, 0, 41); */
+    
+}
+section.bodySection{
+    height: 100vh;
+    position: relative;
+    background: rgb(29, 0, 82);
 }
