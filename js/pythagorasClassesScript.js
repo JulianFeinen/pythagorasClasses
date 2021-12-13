@@ -63,7 +63,7 @@ function Berechnen()
          dreieckobj = new Dreieck(document.getElementById("inputA").value, document.getElementById("inputB").value, document.getElementById("inputC").value);
        
         document.getElementById("inputC").value = dreieckobj.fKathetenBerechnen();
-        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").value = (dreieckobj.FlaechenRechnung());
      
         fresultList(); 
     }
@@ -74,7 +74,7 @@ function Berechnen()
         if (parseFloat(dreieckobj.cLaenge) > parseFloat(dreieckobj.aLaenge))
         {
         document.getElementById("inputB").value = dreieckobj.fHypotenuseUndABerechnen();
-        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").value = (dreieckobj.FlaechenRechnung());
  
         fresultList();
         }
@@ -93,7 +93,7 @@ function Berechnen()
         if(parseFloat(dreieckobj.cLaenge)>parseFloat(dreieckobj.bLaenge))
         {
         document.getElementById("inputA").value = dreieckobj.fHypotenuseUndBBerechnen();
-        document.getElementById("labelF").innerHTML = (dreieckobj.FlaechenRechnung());
+        document.getElementById("labelF").value = (dreieckobj.FlaechenRechnung());
  
         fresultList();
         }
@@ -144,5 +144,5 @@ function alleInputsResetten()
     document.getElementById("inputA").value = "";
     document.getElementById("inputB").value = "";
     document.getElementById("inputC").value = "";
-    document.getElementById("labelF").innerHTML = "";
+    document.getElementById("labelF").value = "";
 }

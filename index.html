@@ -36,24 +36,27 @@
     </head>
     <body onload="mainLoaded()">
         <section class="bodySection">
-           <div class="div1">
-            <form class="forminput">
-            <label class="labelA" >a</label><input class="inputAclass" type="text" id="inputA"><br><br>
-            <label class="labelB">b</label><input class="inputBclass" type="text" id="inputB"><br><br>
-            <label class="labelC">c</label><input class="inputCclass" type="text" id="inputC"><br><br>
-            <label class="labelFclass">F</label><label class="labelF" id="labelF"></label>
-        </form>
-        <h3>Julians Pythagoras</h3>
-        <img onmouseover="" class="imageClass" id="imageID" src="rechtwinkliges-dreieck.jpg">
-        <ol class="listeClass" id="liste">
-        </ol>
-        </div>
-        
-        <div class="div2">
-            <button class="btnBerechnen" onclick="Berechnen()" id="btnBerechne">Berechnen</button>
-            <button class="btnReset" onclick="alleInputsResetten()" id="btnLöschen">löschen</button>
-        </div> 
+            
+            <div class="h3div">Julians Pythagoras</div>
+            
+            <div class="divinput">
+                <label class="labelA" >a</label><input class="inputAclass" placeholder="  Kathete a" title="Kathete 'a'" type="text" id="inputA"><br><br>
+                <label class="labelB">b</label><input class="inputBclass" placeholder="  Kathete b" title="Kathete 'b'" type="text" id="inputB"><br><br>
+                <label class="labelC">c</label><input class="inputCclass" placeholder="  Hypotenuse c" title="Hypotenuse 'c'" type="text" id="inputC"><br><br>
+                <label class="labelFclass">F</label><input placeholder= "  Flaeche F" title="Flaeche 'F'" class="labelF" id="labelF" disabled></input>
+            </div>
+            <div class="imgDiv">
+                <img onmouseover="" class="imageClass" id="imageID" src="rechtwinkliges-dreieck.jpg">
+            </div>
+            <ol class="listeClass" id="liste">
+            </ol>
+            
+            
+            <div class="div2">
+                <button class="btnBerechnen" onclick="Berechnen()" id="btnBerechne">Berechnen</button>
+                <button class="btnReset" onclick="alleInputsResetten()" id="btnLöschen">Löschen</button>
+            </div> 
         </section>
-        
+        <div class="div1"></div>
     </body>
 </html>

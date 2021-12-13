@@ -1,7 +1,9 @@
  html,body{
     height: 100%;
 }
-
+body{
+    height: 4000px;
+}
 @font-face {
     src: url(myfonts/futura/futur.ttf);
     font-family: 'futura';
@@ -14,26 +16,40 @@
     align-content: center;
 }
 img.imageClass{
-    display: block;
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
     border:10px solid rgb(199, 19, 73);
     border-radius: 30px ;
+    width: 250px;
+    height: 200px;
 }
-h3{
+div.imgDiv{
+    /* background-color: black; */
+    width: 270px;
+    top: -10%;
+    left:50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+
+div.h3div{
+    /* background-color: black; */
+    height: 60px;
+    top: 90px;
     color: rgb(245, 9, 80);
     text-align:center;
+    font-style:italic;
+    font-weight: 300px;
     font-size: 50px;
-    font-family: futura;
-    margin-top: -30%;
-}
-form.forminput{
-    margin-top: 100px;
+    font-family: Arial;
+    font-weight:bolder;
+    position: relative;
 }
 
 
+
+div.divinput{
+    position: relative;
+    top: 15%;
+}
 input{
     font-size: 40px;
     border:1px solid rgb(255, 255, 255);
@@ -42,19 +58,21 @@ input{
 }
 input.inputAclass{
     margin-left: 20px;
+    
 }
 input.inputBclass{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 input.inputCclass{
-    margin-left: 10px;
+    margin-left: 30px;
 }
-label.labelF{
+input.labelF{
     background-color: rgb(255, 255, 255);
     border:2px solid rgb(255, 255, 255);
     border-radius: 20px;
     width: 200px;
     padding-right: 200px;
+    margin-left: 20px;
 }
 
 
@@ -62,54 +80,58 @@ label.labelF{
 
 label{
     font-size: 30px;
-    font-family: futura;
+    font-family: arial;
 }
 label.labelA{
     margin-left: 90px;
     font-size: 80px;
+    width: 30px;
 }
 label.labelB{
     margin-left: 90px;
     font-size: 80px;
+    width: 30px;
 }
 label.labelC{
     margin-left: 90px;
     font-size: 80px;
+    width: 30px;
 }
 label.labelFclass{
     margin-left: 90px;
     font-size: 80px;
+    width: 30px;
 }
 
 
 
 
-img.imageClass:hover{
+/* img.imageClass:hover{
     animation: rotation 1s linear infinite;
 }
 @keyframes rotation{
     100%{transform: rotate(360deg);}
-}
-button.btnBerechnen{
-    width: 200px;
-    height: 50px;
+} */
+button{
+    font-family: arial;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bolder;
+    width: 220px;
+    height: 80px;
     border-radius: 30px;
     border-color:rgb(199, 19, 73);
     background: rgb(199, 19, 73);
-    font-size: 30px;
     transition-property: background-color;
     transition-duration: 300ms;
+   
+}
+button.btnBerechnen{
+    margin-right: 30px;
 }
 
 button.btnReset{
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    border-color:rgb(199, 19, 73);
-    background: rgb(199, 19, 73);
-    font-size: 30px;
-    transition-property: background-color;
-    transition-duration: 300ms;
+    margin-left: 30px;
 }
 button.btnBerechnen:hover{
     background-color: rgb(250, 146, 224);
@@ -121,26 +143,30 @@ button.btnReset:hover{
 }
 div.div1{
     width: 100%;
-    height:70%;
-    background-color: rgb(67, 21, 153);
-    padding-top: 20px;
+    height:200px;
+    background-color: rgb(29, 0, 82);
+    position: fixed;
+    bottom: 0%;
 }
 .listeClass{
     font-size: 30px;
     margin-left: 70%;
-    margin-top: -20%;
+    margin-top: -30%;
 }
 div.div2{
     height: 50px;
-    top: 50%;
+    top: 60%;
     left:50%;
-    position: absolute;
+    position:absolute;
     transform: translate(-50%,-50%);
     /* background: rgb(14, 0, 41); */
     
 }
 section.bodySection{
+    padding-top:0;
+    margin-top:0;
     height: 100vh;
-    position: relative;
-    background: rgb(29, 0, 82);
+    width: 100%;
+    position: static;
+    background: rgb(67, 21, 153);
 }
